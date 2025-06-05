@@ -29,3 +29,6 @@ yarn-error.log*
 executable-template-js-win.exe
 executable-template-js-linux
 executable-template-js-macos
+
+#output file
+output.json
