@@ -1,0 +1,38 @@
+{
+  "name": "executable-template-js",
+  "version": "1.0.0",
+  "description": "Node app (template) for generating executable files with javascript ",
+  "main": "script.js",
+  "bin": "./script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pkg ." 
+  },
+   "pkg": {
+    "targets": [
+      "node10","node10-win-x64", "node10-linux-x64", "node10-macos-x64"
+    ]
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jadogeri/Executable-Template-JS.git"
+  },
+  "keywords": [
+    "executable",
+    "mac",
+    "linux",
+    "windows",
+    "pkg",
+    "node",
+    "javascript"
+  ],
+  "author": "Joseph Adogeri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jadogeri/Executable-Template-JS/issues"
+  },
+  "homepage": "https://github.com/jadogeri/Executable-Template-JS#readme"
+}
