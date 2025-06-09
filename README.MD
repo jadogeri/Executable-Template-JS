@@ -59,16 +59,13 @@ A node application serving as template to build executable files in linux ,macos
 
 ### **1.1 Purpose**
 
-This document outlines the package architecture, components, and design considerations for Auth Credential Validator JS package. The goal is to provide support in validating user credentials, ensuring credentials adhere to standards for most online accounts.
+This document outlines a template to build executables in windows, macos and linux.
 
 ### **1.2 Scope**
 
-This package will allow users to:
+This template will allow users to:
 
-- Accept valid credentials (username, email and password).
-- Resolve undefined and null values as inputs.
-- Provide ability to alter regular expression used to validate credentials.
-- Render results of credentials after test.
+- Create executables in windows, macos and linux.
 
 ### **1.3 Intended Audience**
 
@@ -81,10 +78,8 @@ This package will allow users to:
 
 - **Programming Languages**: Javascript
 - **IDE**: Visual Studio Code (VSCode)
-- **Test**: Jest
 - **Plugins**: Early AI
 - **Source Control**: Git and GitHub
-- **CI/CD**: GitHub Actions
 - **Code Analysis**: SonarQube
 
 ## **3. Usage**
