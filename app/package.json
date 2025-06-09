@@ -2,21 +2,33 @@
   "name": "executable-template-js",
   "version": "1.0.0",
   "description": "Node app (template) for generating executable files with javascript ",
-  "type": "module",
+  "type": "commonjs",
   "main": "script.js",
   "bin": "./script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "pkg ." 
+    "build": "pkg ."
   },
-   "pkg": {
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "pkg": {
     "targets": [
-      "node10","node10-win-x64", "node10-linux-x64", "node10-macos-x64"
+      "node16",
+      "node16-win-x64",
+      "node16-linux-x64",
+      "node16-macos-x64"
     ],
-    "outputPath":"dist",
-    "scripts":"src/**/*.js"
+    "outputPath": "dist",
+    "scripts": "src/**/*.js",
+    "sourceType": "module"
   },
   "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
     "pkg": "^5.8.1"
   },
   "repository": {

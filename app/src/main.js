@@ -7,10 +7,10 @@
  *  
  */
 
-import { fileLoader } from "./fileLoader.js";
-import { convertTextToJson } from "./convertTextToJson.js";
+const { fileLoader } =  require("./fileLoader")
+const { convertTextToJson } =  require("./convertTextToJson");
 
-export const main = () =>{
+const main = () =>{
     try{
         const textData = fileLoader();
         convertTextToJson(textData);
@@ -22,4 +22,4 @@ export const main = () =>{
 }
 
 
-main();
+module.exports = { main }

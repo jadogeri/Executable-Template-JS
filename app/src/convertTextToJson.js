@@ -5,9 +5,10 @@
  * @description converts text to json file
  *  
  */
-import fs from 'fs';
 
-export const convertTextToJson = (textData) =>{
+const fs = require('fs');
+
+const convertTextToJson = (textData) =>{
     try {
         const lines = textData.trim().split('\n');
         const jsonData = lines.map(line => {
@@ -30,3 +31,5 @@ export const convertTextToJson = (textData) =>{
     }
 
 }
+
+module.exports = { convertTextToJson}

@@ -6,7 +6,7 @@
  * @description execute main program
  *  
  */
-import { main } from "./src/main.js";
+const { main } =  require("./src/main");
 
 //begin main program
 main();

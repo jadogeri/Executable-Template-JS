@@ -5,16 +5,14 @@
  * @description loads text file into program
  *  
  */
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+const fs = require('fs');
 
-const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
-const __dirname = path.dirname(__filename); // get the name of the director
-console.log(__dirname)
+const fileLoader = () =>{
 
-export const fileLoader = () =>{
-    const filePath = path.join(__dirname, '\\..\\input.txt');
+    console.log(__dirname)
+
+
+    const filePath = "input.txt"
     let textdata =
     fs.readFileSync(filePath, 'utf8', (err, data) => {
        if (err) {
@@ -29,3 +27,6 @@ export const fileLoader = () =>{
    return textdata
 
 }
+
+
+module.exports = { fileLoader }
