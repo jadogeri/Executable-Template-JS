@@ -80,6 +80,14 @@ This template will allow users to:
 
 ## **3. Usage**
 
+0 Open a terminal then type git clone https://github.com/jadogeri/Executable-Template-JS.git
+to download to project.
+
+```bash
+git clone https://github.com/jadogeri/Executable-Template-JS.git
+
+```
+
 1 Type cd app to navigate into the app directory.
 
 ```bash
